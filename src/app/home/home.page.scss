@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.tecnologias{
+  margin: 10px;
+  padding: 0;
+}
+
+.tecnologias__li{
+  list-style: none;
+}
+
+.li__div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 200px;
+  border-bottom: 1px solid grey;
+}
+
+.li__div__img{
+  background-image: url('../../assets/Inteligencia-Artificial.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+
+.div__descricao{
+  font-size: 12px;
+  width: 250px;
+}
+
+.img2{
+  background-image: url('../../assets/transferir.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img3{
+  background-image: url('../../assets/saudePessoal.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img4{
+  background-image: url('../../assets/app-na-educacao-01.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
