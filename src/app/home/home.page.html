@@ -7,70 +7,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ul class="tecnologias">
-    <li class="tecnologias__li">
-      <div class="li__div">
-        <div class="li__div__img img1">
 
-        </div>
+  <ul class="tecnologias" >
+    <li class="tecnologias__li" *ngFor="let tecnologia of listaTecnologias" >
+      <div class="li__div" (click)="exibirTecnologia(tecnologia)">
         <div class="textos">
           <h2 class="div__nome">
-            Inteligência Artificial
+            {{tecnologia.nome}}
           </h2>
           <h3 class="div__descricao">
-            A Inteligência Artificial (IA) refere-se à criação de sistemas e algoritmos capazes de realizar tarefas que normalmente exigiriam inteligência humana
+            {{tecnologia.texto}}
           </h3>
         </div>
       </div>
     </li>
 
-    <li class="tecnologias__li">
-      <div class="li__div">
-        <div class="li__div__img img2">
-
-        </div>
-        <div class="textos">
-          <h2 class="div__nome">
-            Aplivativo de Transporte
-          </h2>
-          <h3 class="div__descricao">
-            Aplicativos de transporte revolucionaram a maneira como as pessoas se locomovem, oferecendo conveniência e acessibilidade através de plataformas que conectam passageiros a motoristas particulares ou serviços de táxi.
-          </h3>
-        </div>
-      </div>
-    </li>
-
-    <li class="tecnologias__li">
-      <div class="li__div">
-        <div class="li__div__img img3">
-
-        </div>
-        <div class="textos">
-          <h2 class="div__nome">
-            Aplivativo de Saúde Pessoal
-          </h2>
-          <h3 class="div__descricao">
-            Aplicativos de saúde pessoal proporcionam ferramentas para monitoramento e gerenciamento da saúde individual. Eles abrangem desde rastreamento de atividades físicas e contagem de calorias até monitoramento de sinais vitais
-          </h3>
-        </div>
-      </div>
-    </li>
-
-
-    <li class="tecnologias__li">
-      <div class="li__div">
-        <div class="li__div__img img4">
-
-        </div>
-        <div class="textos">
-          <h2 class="div__nome">
-            Aprendizado online
-          </h2>
-          <h3 class="div__descricao">
-            Plataformas de aprendizado online revolucionaram a educação, proporcionando acesso a uma variedade de cursos e materiais educativos pela internet
-          </h3>
-        </div>
-      </div>
-    </li>
+    
   </ul>
 </ion-content>
